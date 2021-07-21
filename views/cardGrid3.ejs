@@ -1,0 +1,83 @@
+<div class="row m-3">
+  <h4 class="card-title">
+    <%= data.medications[2].treatment %>
+  </h4>
+  <div class="col-sm-3 m-3">
+    <div class="card" style="height: 300px;">
+      <div class="card-body">
+        <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/pill_yellow.png" class="card-img-top" alt="" style="width: 70px;">
+        <br><br>
+        <h5 class="card-title" style="color: grey;">
+          Reason for Medication
+        </h5>
+        <p class="card-text">
+          <%= data.medications[2].reason %> <br> <br> <br>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3 m-3">
+    <div class="card" style="height: 300px;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: grey;">
+          Directions/Notes
+        </h5>
+        <p class="card-text">
+          <%= data.medications[2].doseperday %>.<br />
+            <%= data.medications[2].direction %>
+
+        </p>
+
+
+        <h4>Dose Timing : </h4>
+        <%= data.medications[1].time[0]%> : <img src="./images/pm.png" class="card-img-top" alt="" style="width: 40px;">
+
+          <br><br><br>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-3 m-3">
+    <div class="card" style="height: 300px;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: grey;">
+          possible Side Effects
+        </h5>
+        <p class="card-text">
+          <%= data.medications[2].possibleSideeffects[0]%> <img src="./images/dizziness.png" class="card-img-top" alt=""
+              style="width: 28px;">
+        </p>
+
+        <p class="card-text">
+          <%= data.medications[2].possibleSideeffects[1]%> <img src="./images/headache.png" class="card-img-top" alt=""
+              style="width: 28px;">
+        </p>
+
+        <p class="card-text">
+          <%= data.medications[2].possibleSideeffects[2]%> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1xPYay83QZga9MI5sZtdiV8AnVZXoTtMZXg&usqp=CAU" class="card-img-top" alt=""
+              style="width: 28px;">
+        </p>
+
+        <p class="card-text">
+          <%= data.medications[2].possibleSideeffects[3]%> <img src="https://i.dlpng.com/static/png/7187292_preview.png" class="card-img-top" alt=""
+              style="width: 35px;">
+        </p>
+
+        <p class="card-text">
+          <%= data.medications[2].possibleSideeffects[4]%> <img src="./images/fatigue.png" class="card-img-top" alt=""
+              style="width: 28px;">
+        </p>
+
+        
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>

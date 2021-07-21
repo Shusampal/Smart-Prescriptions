@@ -1,0 +1,71 @@
+<div class="row m-3">
+  <h4 class="card-title">
+    <%= data.medications[0].treatment %>
+  </h4>
+  <div class="col-sm-3 m-3">
+    <div class="card" style="height: 300px;">
+      <div class="card-body">
+        
+        <br>
+        <img src="./images/medicine.png" class="card-img-top" alt="" style="width: 70px;">
+        <br><br>
+        <h5 class="card-title" style="color: grey;">
+          Reason for Medication
+        </h5>
+        <p class="card-text"><%= data.medications[0].reason %></p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3 m-3">
+    <div class="card" style="height: 300px;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: grey;">
+          Directions/Notes
+        </h5>
+        <p class="card-text">
+          <%= data.medications[0].doseperday %>.<br/>
+          <%= data.medications[0].direction %>.
+          
+        </p>
+
+        <h4>Dose Timing : </h4>
+        <%for( var i = 0 ; i<3 ; i++){%>
+          <%= data.medications[0].time[i]%> <img src="./images/am.png" class="card-img-top" alt="" style="width: 40px;"> &nbsp;
+        <%}%>
+
+        <%= data.medications[0].time[3]%> <img src="./images/pm.png" class="card-img-top" alt="" style="width: 40px;">
+
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-3 m-3">
+    <div class="card" style="height: 300px;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: grey;">
+          possible Side Effects
+        </h5>
+        <p class="card-text">
+          <%= data.medications[0].possibleSideeffects[0]%> <img src="./images/headache.png" class="card-img-top" alt="" style="width: 28px;">
+        </p>
+
+        <p class="card-text">
+          <%= data.medications[0].possibleSideeffects[1]%> <img src="./images/dizziness.png" class="card-img-top" alt=""
+              style="width: 28px;">
+        </p>
+
+        <p>
+          <span style="color: grey;">GET MEDICAL HELP IF </span><%= data.medications[0].remedy%>
+        </p>
+  
+       
+  
+      </div>
+    </div>
+  </div>
+  
+</div>

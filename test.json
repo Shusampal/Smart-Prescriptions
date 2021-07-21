@@ -1,0 +1,63 @@
+{
+
+    "LabNo": "MED004.119657",
+    "PName": "John Smith",
+    "Gender": "Male",
+    "Age": "34",
+    "DOB":"1990-07-10",
+    "ReferredBy": "Self",
+    "medications":[
+        {
+            "reason":"For treatment of lower back pain.",
+            "treatment":"ibuprofen 600mg tab",
+            "representation":"./images/medicine.png",
+            "doseperday":"1 tablet by mouth",
+            "direction":"4 times a day with food every 4 hours",
+            "time":[
+                8,12,4,8
+            ],
+            "possibleSideeffects":[
+                "Headache","Dizziness"
+            ],
+            "remedy":"Experiencing chest pain,shortness of breath,and rapid weight gain."
+        },
+        {
+            "reason": "Reduce blood pressure.",
+            "treatment": "insulin, glargine, human 100 unt/ml inj",
+            "representation": "./images/syringe.png",
+            "doseperday": "1 injection at bedtime",
+            "direction": "Inject 10 ml vial under the skin as directed for 28 days inject 25 units under the skin at bedtime . do not mix with other insulins/discard open vials after 28 days.",
+            "time": [
+                "Bedtime"
+            ],
+            "possibleSideeffects": [
+                "Headache",
+                "Fatigue",
+                "Nausea"
+            ],
+            "remedy": "Experiencing itching skin, wheezing, and fast heart rate."
+        },
+        {
+            "reason": "For treatment of symptoms of an enlarged prostate.",
+            "treatment": "terazosin hcl 2mg capsule",
+            "representation": "./images/pill.png",
+            "doseperday": "3 capsules before bed",
+            "direction": "",
+            "time": [
+                "bedtime"
+            ],
+            "possibleSideeffects": [
+                "Dizziness",
+                "Headache",
+                "Constipation",
+                "Loss of appetite",
+                "Fatigue"
+            ],
+            "remedy": ""
+        }
+    ]
+
+
+}
+
+

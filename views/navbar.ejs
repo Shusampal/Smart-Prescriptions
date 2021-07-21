@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        
+        <div class="navbar-brand fs-3 ms-3">MEDICATIONS <br> <h5> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pills"></i> Active
+                Medications (<%= data.medications.length %>)</h5> 
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"></div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="navbar-brand"><span style="color: grey;">Patient Name</span><br> <%= data.PName %></div>
+                </li>
+                <li class="nav-item">
+                    <div class="navbar-brand"><span style="color: grey;">Date Of Birth</span><br>
+                        <%= new Date(data.DOB).toLocaleDateString() %>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="navbar-brand"><span style="color: grey;">Date of issue</span><br>
+                        <%= new Date().toLocaleDateString()%>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
